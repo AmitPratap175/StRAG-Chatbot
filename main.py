@@ -148,7 +148,7 @@ class ChatApplication:
         self.conversation_service = ConversationService(self.llm, self.history_manager) if self.llm else None
 
     def _initialize_model(self) -> ChatGoogleGenerativeAI:
-        print("Here")
+        # print("Here")
         # A simple check to see if the API key is valid (here, starting with "A")
         if not self.config.google_api_key.startswith("A"):
             return None
